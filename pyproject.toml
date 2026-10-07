@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "surveillance-sim"
+version = "0.1.0"
+description = "Simulate how quickly hospital- and GP-based surveillance detects an emerging outbreak"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["numpy>=1.22", "pandas>=1.4"]
+
+[project.optional-dependencies]
+fit = ["emcee>=3", "matplotlib"]
+dev = ["pytest", "emcee>=3", "matplotlib"]
+
+[tool.setuptools]
+packages = ["surveillance_sim"]
+
+[tool.setuptools.package-data]
+surveillance_sim = ["data/netherlands/*.csv", "data/netherlands/*.md"]

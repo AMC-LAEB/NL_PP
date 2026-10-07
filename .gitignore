@@ -1,0 +1,21 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+.ipynb_checkpoints/
+.DS_Store
+
+# Generated plots
+figures/
+
+# Large raw data and simulation output (the compact inputs in
+# surveillance_sim/data/ are meant to be committed)
+/data/
+*.npy
+*.npz
+*.gpkg
+*.zip
